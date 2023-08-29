@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Previsão do Tempo</h1>
+        <input type="text" id="cityInput" placeholder="Digite a cidade...">
+        <button id="searchBtn">Buscar</button>
+        <div id="weatherInfo" class="hidden">
+            <img id="weatherIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI764V2f_q67Oz3hisxjLDvbp70zpiaAyXFdan8QB-PA&s" alt="Weather Icon">
+            <p id="temp">Temperatura: </p>
+            <p id="desc">Descrição: </p>
+        </div>
+        <p id="errorMsg" class="error hidden"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
