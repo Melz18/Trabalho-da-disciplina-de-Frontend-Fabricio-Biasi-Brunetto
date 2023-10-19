@@ -34,3 +34,22 @@ button {
     width: 50px;
     height: 50px;
 } 
+#history {
+    margin-top: 20px;
+}
+
+#historyList {
+    list-style: none;
+    padding: 0;
+}
+
+#historyList li {
+    background-color: #f1f1f1;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+#history h2 {
+    margin-bottom: 10px;
+}
