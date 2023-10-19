@@ -29,3 +29,21 @@ searchBtn.addEventListener('click', () => {
             errorMsg.textContent = err.message;
         });
 });
+.then(data => {
+    weatherInfo.classList.remove('hidden');
+    errorMsg.classList.add('hidden');
+    weatherIcon.src = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    temp.textContent = `Temperatura: ${data.main.temp}°C`;
+    desc.textContent = `Descrição: ${data.weather[0].description}`;
+
+    addToHistory(cityInput.value);
+})
+// ...
+
+// Adiciona a cidade ao histórico
+function addToHistory(city) {
+    const historyList = document.getElementById('historyList');
+    const listItem = document.createElement('li');
+    listItem.textContent = city;
+    historyList.appendChild(listItem);
+}
