@@ -1,55 +1,34 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e6f2ff;
 }
 
 .container {
-    display: inline-block;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
 }
 
-button {
-    padding: 10px 15px;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-.hidden {
-    display: none;
-}
-
-.error {
-    color: red;
-}
-
-#weatherIcon {
-    width: 50px;
-    height: 50px;
-} 
-#history {
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
 }
 
-#historyList {
-    list-style: none;
-    padding: 0;
+#weatherIcon {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
 }
 
-#historyList li {
-    background-color: #f1f1f1;
-    padding: 5px;
-    border-radius: 3px;
-    margin-top: 5px;
-}
-
-#history h2 {
-    margin-bottom: 10px;
+#error {
+    color: red;
 }
