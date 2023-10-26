@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -10,20 +10,21 @@
 
 <body>
     <div class="container">
-        <h1>Previsão do Tempo</h1>
-        <input type="text" id="cityInput" placeholder="Digite a cidade...">
-        <button id="searchBtn">Buscar</button>
-        <div id="history">
-            <h2> Histórico de Cidades</h2>
-            <ul "id=historylist"></ul>
-        <div id="weatherInfo" class="hidden">
-            <img id="weatherIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI764V2f_q67Oz3hisxjLDvbp70zpiaAyXFdan8QB-PA&s" alt="Icone do Tempo">
-            <p id="temp">Temperatura: </p>
-            <p id="desc">Tempo: </p>
+        <input type="text" id="cityInput" placeholder="Insira o nome da cidade">
+        <button onclick="fetchWeather()">Buscar</button>
+        <div class="weather-info">
+            <img id="weatherIcon" src="" alt="Ícone do clima">
+
         </div>
-        <p id="errorMsg" class="error hidden"></p>
+
+        <div>
+            <h2 id="temperature">--°C</h2>
+            <p id="description">--</p>
+        </div>
     </div>
-    <script src="app.js"></script>
+    <p id="error"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
